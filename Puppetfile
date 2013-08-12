@@ -36,3 +36,33 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "adium",             "1.1.1"
+github "caffeine",          "1.0.0"
+github "chrome",            "1.1.1"
+github "firefox",           "1.1.1"
+github "flux",              "0.0.1"
+github "github_for_mac",    "1.0.1"
+github "heroku",            "2.0.0"
+github "hipchat",           "1.0.7"
+github "imagemagick",       "1.2.1"
+github "iterm2",            "1.0.3"
+github "macvim",            "1.0.0"
+github "mou",               "1.0.0"
+github "osx",               "1.5.0"
+github "property_list_key", "0.1.0" #for puppet-osx
+github "sizeup",            "1.0.0"
+github "skype",             "1.0.3"
+github "spotify",           "1.0.1"
+github "sublime_text_2",    "1.1.2"
+github "textmate",          "1.1.0"
+github "transmission",      "1.0.0"
+github "vagrant",           "2.0.10"
+github "virtualbox",        "1.0.5"
+github "vmware_fusion",     "1.0.0"
+github "wget",              "1.0.0"
+github "xquartz",           "1.1.0"
+github "zsh",               "1.0.0"
+github "omnigraffle",       "1.2.0"
+github "postgresql",        "2.0.0"
+
