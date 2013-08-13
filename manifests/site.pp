@@ -64,16 +64,18 @@ node default {
   }
 
   # node versions
-  include nodejs::v0_4
-  include nodejs::v0_6
-  include nodejs::v0_8
-  include nodejs::v0_10
+  # include nodejs::0_4
+  # include nodejs::0_6
+  # include nodejs::0_8
+  # include nodejs::0_10
+  #these are now underscores and we're including in team::environment anyhow
 
   # default ruby versions
-  include ruby::1_8_7
-  include ruby::1_9_2
-  include ruby::1_9_3
-  include ruby::2_0_0
+  # include ruby::1_8_7
+  # include ruby::1_9_2
+  # include ruby::1_9_3
+  # include ruby::2_0_0
+  # yeah let's handle this in team:environment as well!
 
   # common, useful packages
   package {
@@ -88,4 +90,8 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  #most of our customizations for default user are modularized
+  include team::environment
+  include projects::all
 }

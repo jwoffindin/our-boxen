@@ -5,6 +5,7 @@
 # environment.
 
 def github(name, version, options = nil)
+  puts name
   options ||= {}
   options[:repo] ||= "boxen/puppet-#{name}"
   mod name, version, :github_tarball => options[:repo]
@@ -33,10 +34,15 @@ github "ruby",       "6.3.0"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
+github "sysctl",     "1.0.0"
+github "java",       "1.1.2"
+github "pow",        "1.0.0"
+github "spectacle",  "1.0.0"
+
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-
+github "the_silver_searcher", "0.0.3", :repo => "agustinvinao/puppet-the_silver_searcher"
 github "adium",             "1.1.1"
 github "caffeine",          "1.0.0"
 github "chrome",            "1.1.1"
@@ -62,7 +68,10 @@ github "virtualbox",        "1.0.5"
 github "vmware_fusion",     "1.0.0"
 github "wget",              "1.0.0"
 github "xquartz",           "1.1.0"
+github "rubymine",          "1.0.3", :repo => 'jwoffindin/puppet-rubymine'
 github "zsh",               "1.0.0"
 github "omnigraffle",       "1.2.0"
 github "postgresql",        "2.0.0"
+github "eclipse",           "2.1.0"
+
 
