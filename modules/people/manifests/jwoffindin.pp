@@ -174,4 +174,7 @@ class people::jwoffindin {
     ensure => present,
   }
 
+  include projects::adapter_payment
+  include projects::adapter_payment_mpay
+  include projects::adapter_payment_gig
 }
