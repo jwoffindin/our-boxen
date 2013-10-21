@@ -38,7 +38,8 @@ github "sysctl",     "1.0.0"
 github "java",       "1.1.2"
 github "pow",        "1.0.0"
 github "spectacle",  "1.0.0"
-
+mod "wget",   :git => "https://github.com/maestrodev/puppet-wget.git", :ref => "v1.2.2"
+mod "ant",   :git => "https://github.com/maestrodev/puppet-ant.git", :ref => "v1.0.4"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
@@ -66,7 +67,7 @@ github "transmission",      "1.0.0"
 github "vagrant",           "2.0.10"
 github "virtualbox",        "1.0.5"
 github "vmware_fusion",     "1.0.0"
-github "wget",              "1.0.0"
+# github "wget",              "1.0.0"
 github "xquartz",           "1.1.0"
 github "rubymine",          "1.0.3", :repo => 'jwoffindin/puppet-rubymine'
 github "zsh",               "1.0.0"

@@ -1,3 +1,23 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    maestrodev/wget (1.2.2)
+
+GIT
+  remote: https://github.com/maestrodev/puppet-ant.git
+  ref: v1.0.4
+  sha: f91247d9bc082917fa1ccd64117ef199a26b13c4
+  specs:
+    ant (1.0.4)
+      maestrodev/wget (>= 0.0.1)
+
+GIT
+  remote: https://github.com/maestrodev/puppet-wget.git
+  ref: v1.2.2
+  sha: 20c4de8f1dcbfeeb5aad9a862c782a082caa3129
+  specs:
+    wget (1.2.2)
+
 GITHUBTARBALL
   remote: agustinvinao/puppet-the_silver_searcher
   specs:
@@ -219,11 +239,6 @@ GITHUBTARBALL
     vmware_fusion (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-wget
-  specs:
-    wget (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
@@ -250,6 +265,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   adium (= 1.1.1)
+  ant (>= 0)
   autoconf (= 1.0.0)
   boxen (= 3.0.1)
   caffeine (= 1.0.0)
@@ -296,7 +312,7 @@ DEPENDENCIES
   vagrant (= 2.0.10)
   virtualbox (= 1.0.5)
   vmware_fusion (= 1.0.0)
-  wget (= 1.0.0)
+  wget (>= 0)
   xquartz (= 1.1.0)
   xquartz (= 1.1.0)
   zsh (= 1.0.0)
